@@ -70,6 +70,8 @@ app.post("/failure", (req, res) => {
 })
 
 
-app.listen(process.env.PORT || port, ()=>{
-    console.log(`Port listened ${port}`); 
-});
+app.listen(process.env.PORT || port)
+
+// , ()=>{
+//     console.log(`Port listened ${port}`); 
+// });
