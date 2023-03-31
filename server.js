@@ -1,10 +1,11 @@
+require("dotenv").config();
 const express = require("express");
 const client = require("@mailchimp/mailchimp_marketing");
 const app = express();
 const port = 3000;
 
-var mailChimpKey = config.MAIL_CHIMP_KEY;
-var mailChimpListID = config.MAIL_CHIMP_LIST_ID;
+var mailChimpKey = process.env.MAIL_CHIMP_KEY;
+var mailChimpListID = process.env.MAIL_CHIMP_LIST_ID;
 
 app.use(express.static("public"));
 app.use(express.json());
